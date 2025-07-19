@@ -1,0 +1,9 @@
+{
+  "name": "nestjs-user-docs-app",
+  "version": "1.0.0",
+  "description": "NestJS backend application",
+  "main": "dist/main.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
