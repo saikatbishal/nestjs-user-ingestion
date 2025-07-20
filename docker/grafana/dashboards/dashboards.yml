@@ -1,0 +1,23 @@
+# Grafana Dashboard Provisioning Configuration
+apiVersion: 1
+
+providers:
+  - name: "NestJS Dashboards"
+    orgId: 1
+    folder: "NestJS"
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards/nestjs
+
+  - name: "Infrastructure Dashboards"
+    orgId: 1
+    folder: "Infrastructure"
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards/infrastructure

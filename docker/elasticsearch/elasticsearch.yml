@@ -1,0 +1,40 @@
+# Elasticsearch Configuration for Document Search and Indexing
+
+# Cluster settings
+cluster.name: nestjs-documents-cluster
+node.name: nestjs-elasticsearch-node
+
+# Network settings
+network.host: 0.0.0.0
+http.port: 9200
+transport.tcp.port: 9300
+
+# Discovery settings (single node for now, can be extended for clusters)
+discovery.type: single-node
+
+# Memory and performance settings
+bootstrap.memory_lock: true
+indices.memory.index_buffer_size: 20%
+indices.memory.min_index_buffer_size: 48mb
+
+# Security settings (disabled for development, enable for production)
+xpack.security.enabled: false
+xpack.monitoring.enabled: true
+xpack.graph.enabled: false
+xpack.watcher.enabled: false
+xpack.ml.enabled: false
+
+# Index settings
+action.auto_create_index: true
+indices.fielddata.cache.size: 40%
+
+# Logging
+logger.level: INFO
+
+# Document processing optimizations
+index.mapping.total_fields.limit: 2000
+index.max_result_window: 100000
+
+# Thread pool settings for document ingestion
+thread_pool.write.queue_size: 1000
+thread_pool.search.queue_size: 1000

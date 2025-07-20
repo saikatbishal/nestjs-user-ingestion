@@ -1,0 +1,169 @@
+version: "3.8"
+
+# ===========================================
+# Production Environment Configuration
+# ===========================================
+
+services:
+  # ===========================================
+  # Multiple NestJS App Instances for Load Balancing
+  # ===========================================
+  app-1:
+    extends:
+      file: docker-compose.yml
+      service: app
+    container_name: nestjs-app-1
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
+        reservations:
+          cpus: "0.5"
+          memory: 512M
+
+  app-2:
+    extends:
+      file: docker-compose.yml
+      service: app
+    container_name: nestjs-app-2
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
+        reservations:
+          cpus: "0.5"
+          memory: 512M
+
+  app-3:
+    extends:
+      file: docker-compose.yml
+      service: app
+    container_name: nestjs-app-3
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
+        reservations:
+          cpus: "0.5"
+          memory: 512M
+
+  # ===========================================
+  # Production Nginx with Load Balancing
+  # ===========================================
+  nginx:
+    extends:
+      file: docker-compose.yml
+      service: nginx
+    volumes:
+      - ./nginx/nginx.prod.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - nginx_logs:/var/log/nginx
+      - app_uploads:/var/www/uploads:ro
+    depends_on:
+      - app-1
+      - app-2
+      - app-3
+
+  # ===========================================
+  # Production PostgreSQL with Master-Slave
+  # ===========================================
+  postgres:
+    extends:
+      file: docker-compose.yml
+      service: postgres
+    environment:
+      POSTGRES_MAX_CONNECTIONS: 200
+      POSTGRES_SHARED_BUFFERS: 256MB
+      POSTGRES_EFFECTIVE_CACHE_SIZE: 1GB
+    deploy:
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4G
+        reservations:
+          cpus: "2"
+          memory: 2G
+
+  # ===========================================
+  # Redis Cluster for High Availability
+  # ===========================================
+  redis:
+    extends:
+      file: docker-compose.yml
+      service: redis
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 1G
+        reservations:
+          cpus: "1"
+          memory: 512M
+
+  # ===========================================
+  # Elasticsearch with Production Settings
+  # ===========================================
+  elasticsearch:
+    extends:
+      file: docker-compose.yml
+      service: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=true
+      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+      - bootstrap.memory_lock=true
+    deploy:
+      resources:
+        limits:
+          cpus: "4"
+          memory: 4G
+        reservations:
+          cpus: "2"
+          memory: 2G
+
+# ===========================================
+# Production Networks
+# ===========================================
+networks:
+  nestjs-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16
+          gateway: 172.20.0.1
+
+# ===========================================
+# Production Volumes with Backup Strategy
+# ===========================================
+volumes:
+  postgres_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /var/lib/docker/volumes/nestjs-postgres
+  redis_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /var/lib/docker/volumes/nestjs-redis
+  elasticsearch_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /var/lib/docker/volumes/nestjs-elasticsearch
+  app_uploads:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /var/lib/docker/volumes/nestjs-uploads
+  nginx_logs:
+    driver: local

@@ -1,0 +1,78 @@
+# Prometheus Alerting Rules for NestJS Application
+
+groups:
+  - name: nestjs.rules
+    rules:
+      # Application availability
+      - alert: NestJSAppDown
+        expr: up{job="nestjs-app"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "NestJS application is down"
+          description: "The NestJS application has been down for more than 1 minute."
+
+      # High response time
+      - alert: HighResponseTime
+        expr: http_request_duration_ms{quantile="0.95"} > 1000
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High response time detected"
+          description: "95th percentile response time is above 1000ms for 5 minutes."
+
+      # High error rate
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is above 10% for 2 minutes."
+
+  - name: database.rules
+    rules:
+      # Database connectivity
+      - alert: PostgreSQLDown
+        expr: up{job="postgres"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "PostgreSQL is down"
+          description: "PostgreSQL database has been down for more than 1 minute."
+
+      # Redis connectivity
+      - alert: RedisDown
+        expr: up{job="redis"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Redis is down"
+          description: "Redis cache has been down for more than 1 minute."
+
+  - name: system.rules
+    rules:
+      # High memory usage
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is above 85% for 5 minutes."
+
+      # High CPU usage
+      - alert: HighCPUUsage
+        expr: 100 - (avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is above 80% for 5 minutes."
