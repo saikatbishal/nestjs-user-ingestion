@@ -152,7 +152,7 @@ The server will start on `http://localhost:3000` by default.
   ```zsh
   npm run test:cov
   ```
-- Coverage target: **70%+**
+- Coverage target: **90%+**
 
 ## Design Decisions
 
