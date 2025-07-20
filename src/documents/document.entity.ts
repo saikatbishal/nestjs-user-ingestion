@@ -16,10 +16,19 @@ export class Document {
   @Column()
   title: string;
 
-  @Column("text")
+  @Column("text", { nullable: true })
   content: string;
 
-  @ManyToOne(() => User, { nullable: false })
+  @Column({ nullable: true })
+  type: string;
+
+  @Column({ nullable: true })
+  filePath: string;
+
+  @Column({ default: 0 })
+  size: number;
+
+  @ManyToOne(() => User, { nullable: true, onDelete: "SET NULL" })
   owner: User;
 
   @CreateDateColumn()
