@@ -205,10 +205,6 @@ The server will start on `http://localhost:3000` by default.
 3. Commit your changes
 4. Open a pull request
 
-## License
-
-[MIT](LICENSE)
 
 ---
-
-> For any questions, please contact [your-email@example.com](mailto:your-email@example.com)
+Nestjs take-home assignment project
