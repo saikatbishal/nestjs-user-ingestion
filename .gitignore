@@ -1,2 +1,27 @@
 .env
 */**/.gitkeep
+/node_modules
+/exercise_details.md
+/coverage/
+
+# Build output
+/dist
+/dist/**/*
+*.js.map
+
+# Upload files
+/uploads
+/uploads/**/*
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
