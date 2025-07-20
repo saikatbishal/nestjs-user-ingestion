@@ -5,6 +5,7 @@ import { Role } from "./roles.enum";
 import { UpdateUserRoleDto } from "./dto/update-user-role.dto";
 import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { RolesGuard } from "../auth/roles.guard";
+import { NotFoundException } from "@nestjs/common";
 
 describe("UsersController", () => {
   let controller: UsersController;
@@ -136,6 +137,13 @@ describe("UsersController", () => {
       await expect(controller.deleteUser(1)).rejects.toThrow(
         "Failed to delete user: Delete failed"
       );
+    });
+
+    it("should re-throw NotFoundException directly", async () => {
+      const notFoundError = new NotFoundException("User not found");
+      (mockUsersService.delete as jest.Mock).mockRejectedValue(notFoundError);
+
+      await expect(controller.deleteUser(1)).rejects.toThrow(NotFoundException);
     });
   });
 });

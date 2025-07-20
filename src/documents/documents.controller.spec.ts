@@ -5,7 +5,7 @@ import { CreateDocumentDto } from "./dto/create-document.dto";
 import { UpdateDocumentDto } from "./dto/update-document.dto";
 import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { RolesGuard } from "../auth/roles.guard";
-import { ExecutionContext } from "@nestjs/common";
+import { ExecutionContext, NotFoundException } from "@nestjs/common";
 
 describe("DocumentsController", () => {
   let controller: DocumentsController;
@@ -186,6 +186,17 @@ describe("DocumentsController", () => {
 
       await expect(controller.deleteDocument(1)).rejects.toThrow(
         "Failed to delete document: Delete failed"
+      );
+    });
+
+    it("should re-throw NotFoundException directly", async () => {
+      const notFoundError = new NotFoundException("Document not found");
+      (mockDocumentsService.delete as jest.Mock).mockRejectedValue(
+        notFoundError
+      );
+
+      await expect(controller.deleteDocument(1)).rejects.toThrow(
+        NotFoundException
       );
     });
   });

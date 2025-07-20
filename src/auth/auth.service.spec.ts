@@ -161,4 +161,44 @@ describe("AuthService", () => {
     });
     expect(userRepository.save).toHaveBeenCalled();
   });
+
+  it("should throw error for invalid reset token", async () => {
+    userRepository.findOne.mockResolvedValueOnce(null);
+
+    await expect(
+      service.resetPassword({
+        token: "invalid-token",
+        newPassword: "newpass",
+      })
+    ).rejects.toThrow("Invalid or expired reset token");
+  });
+
+  it("should throw error for expired reset token", async () => {
+    const expiredUser = {
+      ...mockUser,
+      resetPasswordToken: "expired-token",
+      resetPasswordExpires: Date.now() - 1000, // Expired 1 second ago
+    };
+    userRepository.findOne.mockResolvedValueOnce(expiredUser);
+
+    await expect(
+      service.resetPassword({
+        token: "expired-token",
+        newPassword: "newpass",
+      })
+    ).rejects.toThrow("Invalid or expired reset token");
+  });
+
+  it("should return generic message when requesting reset for non-existent email", async () => {
+    (usersService.findByEmail as jest.Mock).mockResolvedValueOnce(null);
+
+    const result = await service.requestPasswordReset({
+      email: "nonexistent@example.com",
+    });
+
+    expect(result.message).toBe(
+      "If the email exists, a reset link will be sent."
+    );
+    expect(userRepository.save).not.toHaveBeenCalled();
+  });
 });
