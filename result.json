@@ -1,0 +1,891 @@
+[
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/filters/validation-exception.filter.spec.ts",
+    "name": "ValidationExceptionFilter should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 6
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/filters/validation-exception.filter.spec.ts",
+    "name": "ValidationExceptionFilter should catch and format validation error",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/roles.guard.spec.ts",
+    "name": "RolesGuard should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 22
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/roles.guard.spec.ts",
+    "name": "RolesGuard should allow if no roles required",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 2
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/roles.guard.spec.ts",
+    "name": "RolesGuard should allow if user has required role",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/roles.guard.spec.ts",
+    "name": "RolesGuard should deny if user does not have required role",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 0
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/jwt.strategy.spec.ts",
+    "name": "JwtStrategy should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/jwt.strategy.spec.ts",
+    "name": "JwtStrategy should validate payload",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 44
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should register a user",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 319
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should not register if email exists",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 39
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should login with correct credentials",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 263
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should not login with wrong credentials",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 17
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should refresh token",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 8
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should throw on invalid refresh token",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should request password reset",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.service.spec.ts",
+    "name": "AuthService should reset password",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 256
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.controller.spec.ts",
+    "name": "AuthController should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 28
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.controller.spec.ts",
+    "name": "AuthController should register",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 6
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.controller.spec.ts",
+    "name": "AuthController should login",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.controller.spec.ts",
+    "name": "AuthController should logout",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.controller.spec.ts",
+    "name": "AuthController should refresh",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 6
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.controller.spec.ts",
+    "name": "AuthController should request password reset",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/auth/auth.controller.spec.ts",
+    "name": "AuthController should reset password",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 39
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController getAllUsers should return all users",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 14
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController getAllUsers should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 15
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController getUser should return a user by id",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 20
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController getUser should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController updateUserRole should update user role",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController updateUserRole should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController deleteUser should delete a user",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.controller.spec.ts",
+    "name": "UsersController deleteUser should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 12
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 42
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController getAllDocuments should return all documents",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 12
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController getAllDocuments should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 24
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController getDocument should return a document by id",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController getDocument should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController createDocument should create a new document",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController createDocument should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController updateDocument should update a document",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController updateDocument should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController deleteDocument should delete a document",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 8
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController deleteDocument should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 17
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController uploadDocument should upload a file",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.controller.spec.ts",
+    "name": "DocumentsController uploadDocument should handle upload errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/app.controller.spec.ts",
+    "name": "AppController should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 42
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/app.controller.spec.ts",
+    "name": "AppController getHello should return API information",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/app.controller.spec.ts",
+    "name": "AppController getHealth should return health status",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 25
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 33
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController triggerIngestion should trigger ingestion process",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 11
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController triggerIngestion should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 22
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController getIngestionProcesses should return all ingestion processes",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 9
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController getIngestionProcesses should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 6
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController getIngestionProcess should return ingestion process by id",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 10
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController getIngestionProcess should handle service errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 20
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController handleWebhook should handle webhook payload",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.controller.spec.ts",
+    "name": "IngestionController handleWebhook should handle webhook errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 11
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 27
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService triggerIngestion should create and trigger a full ingestion process",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 44
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService triggerIngestion should create ingestion process with document IDs",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService triggerIngestion should log the ingestion trigger",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 10
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService getAllProcesses should return all ingestion processes ordered by createdAt DESC",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService getProcessById should return ingestion process by id",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService getProcessById should throw NotFoundException if process not found",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 24
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService handleWebhook should handle ingestion_complete webhook",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService handleWebhook should handle ingestion_failed webhook",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService handleWebhook should handle unknown webhook type",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService processIngestion should start processing after initial delay",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 9
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/ingestion/ingestion.service.spec.ts",
+    "name": "IngestionService processIngestion should handle processing errors during getProcessById",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 20
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService findByEmail should return user by email",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService findByEmail should return undefined if user not found",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService create should create a new user",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 18
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService findAll should return all users with selected fields",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 6
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService findById should return user by id",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 6
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService findById should throw NotFoundException if user not found",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 19
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService updateRole should update user role",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService updateRole should throw NotFoundException if user not found",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 14
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService delete should delete user successfully",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 10
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService delete should throw NotFoundException if user not found during deletion",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService delete should throw error for foreign key constraint violation",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/users/users.service.spec.ts",
+    "name": "UsersService delete should rethrow other errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 10
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/error.util.spec.ts",
+    "name": "formatError should format string error",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/error.util.spec.ts",
+    "name": "formatError should format Error instance",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 7
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/error.util.spec.ts",
+    "name": "formatError should format unknown error",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/pagination.util.spec.ts",
+    "name": "getPagination should return default pagination if query is empty",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/pagination.util.spec.ts",
+    "name": "getPagination should parse valid page and limit",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/pagination.util.spec.ts",
+    "name": "getPagination should clamp limit to 100",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 0
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/pagination.util.spec.ts",
+    "name": "getPagination should not allow page < 1",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/pagination.util.spec.ts",
+    "name": "paginate should paginate array and return items/total",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 0
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/pagination.util.spec.ts",
+    "name": "paginate should return empty items if page is out of range",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 0
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/filters/http-exception.filter.spec.ts",
+    "name": "HttpExceptionFilter should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/filters/http-exception.filter.spec.ts",
+    "name": "HttpExceptionFilter should catch and format exception",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/interceptors/logging.interceptor.spec.ts",
+    "name": "LoggingInterceptor should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/interceptors/logging.interceptor.spec.ts",
+    "name": "LoggingInterceptor should log and pass through",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/interceptors/transform.interceptor.spec.ts",
+    "name": "TransformInterceptor should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 6
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/interceptors/transform.interceptor.spec.ts",
+    "name": "TransformInterceptor should transform response",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/utils.spec.ts",
+    "name": "paginate should paginate array",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/database/database.providers.spec.ts",
+    "name": "Database Providers AppDataSource Configuration should be configured with correct default values",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/database/database.providers.spec.ts",
+    "name": "Database Providers AppDataSource Configuration should include all required entities",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/database/database.providers.spec.ts",
+    "name": "Database Providers databaseProviders should contain DATA_SOURCE provider",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/database/database.providers.spec.ts",
+    "name": "Database Providers databaseProviders should return DataSource from factory function",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/database/database.providers.spec.ts",
+    "name": "Database Providers databaseProviders should handle DataSource initialization",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/database/database.providers.spec.ts",
+    "name": "Database Providers databaseProviders should handle already initialized DataSource",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 0
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/database/database.providers.spec.ts",
+    "name": "Database Providers Environment Variables should use environment variables when provided",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 1
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService should be defined",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 24
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService constructor should create upload directory if it doesn't exist",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 11
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService constructor should not create upload directory if it already exists",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 15
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService findAll should return all documents ordered by createdAt DESC",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService findById should return a document by id",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService findById should throw NotFoundException if document not found",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 38
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService create should create a document with content",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 10
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService create should create a document with default type",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService create should create a document with filePath",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 6
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService update should update a document",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService update should throw NotFoundException if document not found",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService delete should delete a document without file",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService delete should delete a document with file",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 3
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService delete should delete a document when file doesn't exist",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 2
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService delete should throw NotFoundException if document not found in repository",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 2
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService delete should throw error for foreign key constraint violation",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 2
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService delete should rethrow other errors",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 4
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService upload should upload a file and create document",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 2
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/documents/documents.service.spec.ts",
+    "name": "DocumentsService upload should throw NotFoundException if no file provided",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 5
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/uuid.util.spec.ts",
+    "name": "generateUUID should generate a string uuid",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 2
+  },
+  {
+    "suite": "/Users/saikatbishal/nestjs-docs-user-ingestion/src/common/utils/uuid.util.spec.ts",
+    "name": "generateUUID should generate unique uuids",
+    "status": "passed",
+    "failureMessages": [],
+    "duration": 0
+  }
+]
