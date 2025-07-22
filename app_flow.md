@@ -108,4 +108,4 @@ This document explains the structure, purpose, and interconnections of all files
 | src/ingestion/    | Ingestion process management                        |
 | src/database/     | Database config, providers, seeding                 |
 | src/common/       | Shared decorators, filters, interceptors, utilities |
---------------------|------------------------------------------------------
+
